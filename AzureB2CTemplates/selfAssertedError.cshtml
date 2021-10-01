@@ -1,5 +1,5 @@
 <!--
-Originally from
+Original source
 https://login.microsoftonline.com/static/tenant/templates/AzureBlue/selfAsserted.cshtml
  -->
 
@@ -140,7 +140,7 @@ https://login.microsoftonline.com/static/tenant/templates/AzureBlue/selfAsserted
                         <p>Partners Life Azure B2C UAT instance</p>
                         <div id="api" role="main">
                         </div>
-                        Redirecting to log in page after <span id="countdown">10</span> seconds, or <a href="https://www.google.com">here</a> to log in.
+                        Redirecting to log in page after <span id="countdown">10</span> seconds, or click <a href="https://www.partnerslife.co.nz/">here</a> to log in.
                     </div>
                 </div>
             </div>
@@ -151,7 +151,7 @@ https://login.microsoftonline.com/static/tenant/templates/AzureBlue/selfAsserted
       function countdown() {
           seconds = seconds - 1;
           if (seconds < 0) {
-              window.location = "https://www.google.com";
+              window.location = "https://www.partnerslife.co.nz/";
           } else {
               document.getElementById("countdown").innerHTML = seconds;
               window.setTimeout("countdown()", 1000);
